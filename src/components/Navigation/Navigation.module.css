@@ -1,0 +1,11 @@
+.active {
+    color: rgba(222, 87, 19, 0.919);
+    font-weight: 600;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgba(222, 87, 19, 0.919);
+  }
