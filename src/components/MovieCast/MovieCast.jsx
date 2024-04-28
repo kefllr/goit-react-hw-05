@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { getMovieCast } from   "../../api";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import Loader from "../Loader/Loader";
+import css from "./MovieCast.module.css"
 
 const MovieCast = () => {
   const [movieCast, setMovieCast] = useState([]);
@@ -30,15 +31,18 @@ const MovieCast = () => {
   return (
     <div>
       {movieCast && (
-        <ul>
+        <ul className={css.castlist}>
           {movieCast.map(({ id, name, profile_path, character }) => {
             return (
-              <li key={id}>
+              <li className={css.castitem} key={id}>
+                
                 <img
                   src={`https://image.tmdb.org/t/p/w500${profile_path}`}
                   width={150}
                   alt={name}
+                  className={css.imagecast}
                 />
+                
                 <p>{name}</p>
                 <p>
                   <b>Role:</b>

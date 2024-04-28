@@ -1,0 +1,18 @@
+.movielist {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 15px;
+  }
+  
+  .movieitem {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 45px) / 4);
+  }
+  
+  .movietitle {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+  }

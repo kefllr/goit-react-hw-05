@@ -1,6 +1,6 @@
 import { Route, Routes, Link, useParams, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef, Suspense, lazy } from "react";
-import { getMovieDetails } from "../../services/api";
+import { getMovieDetails } from "../../api";
 import ErrorMessage from "../../components/ErrorMessage/ErrorMessage";
 import Loader from "../../components/Loader/Loader";
 import css from "./MovieDetais.module.css";
